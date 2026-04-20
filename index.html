@@ -4,38 +4,152 @@
   <meta charset="UTF-8" />
   <title>Your Name</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
     body {
-      font-family: system-ui, sans-serif;
-      max-width: 700px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      max-width: 850px;
       margin: 60px auto;
       padding: 0 20px;
-      line-height: 1.6;
+      line-height: 1.65;
+      color: #111;
     }
-    h1 { margin-bottom: 0; }
-    .subtitle { color: #666; }
-    a { color: #0366d6; text-decoration: none; }
+
+    header {
+      margin-bottom: 50px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 5px;
+    }
+
+    .tagline {
+      color: #555;
+      font-size: 1.05rem;
+    }
+
+    section {
+      margin-bottom: 45px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 6px;
+      margin-bottom: 18px;
+    }
+
+    .project {
+      margin-bottom: 22px;
+    }
+
+    .project-title {
+      font-weight: 600;
+    }
+
+    .project-meta {
+      color: #666;
+      font-size: 0.9rem;
+    }
+
+    ul {
+      padding-left: 18px;
+    }
+
+    a {
+      color: #0366d6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 60px;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
+
 <body>
-  <h1>Your Name</h1>
-  <p class="subtitle">Student · Interests · Future goals</p>
 
-  <p>
-    Hi! I’m a student interested in ___.
-    This site will host my projects, writing, and notes.
-  </p>
+  <header>
+    <h1>Your Name</h1>
+    <p class="tagline">
+      Student · Builder · Interested in ___, ___, and ___
+    </p>
+  </header>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="#">Project One</a></li>
-    <li><a href="#">Project Two</a></li>
-  </ul>
+  <section>
+    <h2>What I’m Doing Now</h2>
+    <p>
+      Currently working on ___, learning ___, and exploring ___.
+      This site is a place to keep track of what I’m building and thinking about.
+    </p>
+  </section>
 
-  <h2>Contact</h2>
-  <p>
-    <a href="https://github.com/yourusername">GitHub</a> ·
-    <a href="mailto:you@email.com">Email</a>
-  </p>
+  <section>
+    <h2>Projects</h2>
+
+    <div class="project">
+      <p class="project-title">
+        <a href="#">Project Name</a>
+      </p>
+      <p class="project-meta">Python · Finance · 2025</p>
+      <p>
+        Short description of what this project does, why you built it,
+        or what you learned from it.
+      </p>
+    </div>
+
+    <div class="project">
+      <p class="project-title">
+        <a href="#">Another Project</a>
+      </p>
+      <p class="project-meta">Research · Writing · Theology</p>
+      <p>
+        A sentence or two explaining the idea, not just the result.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience & Involvement</h2>
+    <ul>
+      <li>
+        <strong>Role / Organization</strong> — what you worked on or contributed
+      </li>
+      <li>
+        <strong>Class / Program</strong> — relevant focus or outcome
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Skills & Interests</h2>
+    <p>
+      Python, data analysis, math, writing, theology,
+      finance, systems thinking, learning new tools.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      <a href="https://github.com/yourusername">GitHub</a> ·
+      <a href="mailto:you@email.com">Email</a> ·
+      <a href="#">LinkedIn</a>
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      Built with plain HTML & GitHub Pages.
+    </p>
+  </footer>
+
 </body>
 </html>
