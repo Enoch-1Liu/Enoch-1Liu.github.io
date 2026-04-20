@@ -13,8 +13,9 @@ body {
   margin: 70px auto;
   padding: 0 24px;
   line-height: 1.7;
-  color: #111;
-  background: #fafafa;
+
+  background: var(--bg-main);
+  color: var(--text-main);
 }
 
 /* Headings */
