@@ -1,3 +1,11 @@
+:root {
+  --text-main: #4A4A4A;      /* primary text */
+  --text-muted: #6D8196;    /* secondary / metadata */
+  --bg-main: #FFFFE3;       /* page background */
+  --bg-card: #CBCBCB;       /* project cards */
+  --accent: #6D8196;        /* links / highlights */
+}
+
 /* Base */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
