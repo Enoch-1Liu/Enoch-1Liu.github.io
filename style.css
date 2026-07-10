@@ -1,60 +1,73 @@
 :root {
-  --text-main: #4A4A4A;      /* primary text */
-  --text-muted: #6D8196;    /* secondary / metadata */
-  --bg-main: #FFFFE3#CBCBCB;       /* page background */
-  --bg-card: #CBCBCB;       /* project cards */
-  --accent: #6D8196;        /* links / highlights */
+  --text-main: #1F2937;      /* Dark slate for high readability */
+  --text-muted: #6B7280;     /* Soft gray for metadata */
+  --bg-main: #F9FAFB;        /* Clean off-white page background */
+  --bg-card: #FFFFFF;        /* Crisp white project cards */
+  --accent: #2563EB;         /* Modern blue for links */
+  --accent-hover: #1D4ED8;   /* Darker blue for interactions */
 }
 
 /* Base */
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-  max-width: 900px;
-  margin: 70px auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-width: 800px;
+  margin: 60px auto;
   padding: 0 24px;
-  line-height: 1.7;
-
+  line-height: 1.6;
   background: var(--bg-main);
   color: var(--text-main);
 }
 
 /* Headings */
 h1 {
-  font-size: 2.6rem;
-  margin-bottom: 6px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
 }
 
 h2 {
-  font-size: 1.45rem;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-top: 0;
-  border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 6px;
+  border-bottom: 2px solid #E5E7EB;
+  padding-bottom: 8px;
+  margin-bottom: 24px;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
 }
 
 /* Header */
 header {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .tagline {
-  color: #555;
-  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 650px;
 }
 
 /* Navigation */
 nav {
-  margin-top: 14px;
+  margin-top: 16px;
+  display: flex;
+  gap: 16px;
 }
 
 nav a {
-  margin-right: 16px;
-  font-size: 0.95rem;
-  color: #0366d6;
-  text-decoration: none;
-}
-
-nav a:hover {
-  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* Sections */
@@ -65,25 +78,41 @@ section {
 /* Project cards */
 .project {
   background: var(--bg-card);
-  border-radius: 10px;
-  padding: 22px 24px;
-  margin-bottom: 22px;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid #E5E7EB;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 
-  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .project-title {
-  font-weight: 600;
-  color: var(--text-main);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 4px 0;
 }
 
 .project-meta {
-  font-size: 0.9rem;
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* Footer */
 footer {
   margin-top: 80px;
+  padding-top: 24px;
+  border-top: 1px solid #E5E7EB;
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-muted);
+  text-align: center;
+  margin-bottom: 40px;
 }
